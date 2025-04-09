@@ -1,11 +1,50 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import './src/styles/global.css'
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<header id="landing-header" class="flex items-center justify-between h-20 px-6  my-9">
+		
+		
+			
+			<div class="flex-1 flex justify-start">
+			<a href="#">
+				<img class="h-34" src="/logo 2.png" alt="">
+			</a>
+		</div>
+		<div class="flex-1 flex justify-center">
+		<nav>
+				<ul class="flex gap-8 text-white">
+					<li><a href="">Home</a></li>
+					<li><a href="">Pages</a></li>
+					<li><a href="">Materiais</a></li>
+					<li><a href="">Galeria</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="flex-1 flex justify-end">
+		</div>
+	</header>
+	<hr class="border-t border-white" />
+
+	<section class="flex justify-evenly py-2.5">
+		<div class="items-center">
+			<h1>For your living</h1>
+			<p>Flooring <br>
+				You Fall In<br>
+				Love With</p>
+			<button class="bg-white">Faca seu orcamento</button>
+		</div>
+		<div class="flex [&>img]:p-7 [&>img]:w-[60vh]">
+			<img src="/public/slide-01.jpg" alt="">
+			<img src="/public/slide-02.jpg" alt="">
+		</div>
+	</section>
+	<section>
+		<div>
+			<img class="rounded-full" src="/public/porcelanato.jpg" alt="">
+		</div>
+	</section>
 </Layout>
