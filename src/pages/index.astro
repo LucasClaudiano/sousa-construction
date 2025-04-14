@@ -4,47 +4,81 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<header id="landing-header" class="flex items-center justify-between h-20 px-6  my-9">
-		
-		
+	<header id="landing-header" class="flex items-center justify-between h-20 px-6  my-3">
 			
 			<div class="flex-1 flex justify-start">
 			<a href="#">
-				<img class="h-34" src="/logo 2.png" alt="">
+				<img class="h-27" src="/logo 2.png" alt="">
 			</a>
 		</div>
 		<div class="flex-1 flex justify-center">
 		<nav>
-				<ul class="flex gap-8 text-white">
-					<li><a href="">Home</a></li>
-					<li><a href="">Pages</a></li>
-					<li><a href="">Materiais</a></li>
-					<li><a href="">Galeria</a></li>
-					<li><a href="">Contato</a></li>
+				<ul class="flex gap-14 text-white [&>li>a]:hover:text-secondary [&>li>a]:duration-700">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Pages</a></li>
+					<li><a href="#">Materiais</a></li>
+					<li><a href="#">Galeria</a></li>
+					<li><a href="#">Contato</a></li>
 				</ul>
 			</nav>
 		</div>
 		<div class="flex-1 flex justify-end">
 		</div>
 	</header>
-	<hr class="border-t border-white" />
+	<hr class="border-t border-white"/>
 
 	<section class="flex justify-evenly py-2.5">
-		<div class="items-center">
-			<h1>For your living</h1>
-			<p>Flooring <br>
+		<div class="items-center content-center">
+			<h1 class="text-white">For your living</h1>
+			<p class="text-white text-8xl py-14">Flooring <br>
 				You Fall In<br>
 				Love With</p>
-			<button class="bg-white">Faca seu orcamento</button>
+			<a  href="#" class=" rounded-sm p-4 border-2 text-white  bg-secondary border-secondary hover:bg-primary hover:text-secondary transition-colors duration-500">
+					Faca seu orcamento
+			</a>
+			
+
 		</div>
 		<div class="flex [&>img]:p-7 [&>img]:w-[60vh]">
-			<img src="/public/slide-01.jpg" alt="">
-			<img src="/public/slide-02.jpg" alt="">
+			<img src="/slide-01.jpg" alt="">
+			<img src="/slide-02.jpg" alt="">
 		</div>
 	</section>
+	<section class="flex items-center justify-center py-20 gap-16">
+		<div class="[&>img]:rounded-full [&>img]:p-5 grid grid-cols-2 [&>img]:h-44">
+			<img src="/porcelanato.jpg" alt="">
+			<img src="/porcelanato.jpg" alt="">
+			<img src="/porcelanato.jpg" alt="">
+			<img src="/porcelanato.jpg" alt="">
+			<img src="/porcelanato.jpg" alt="">
+			<img src="/porcelanato.jpg" alt="">
+		</div>
+		<div class="text-white flex flex-col p-4">
+			<h2 class="pb-10">About Us</h2>
+			<p class="text-5xl pb-10">Choose Your Own Color</p>
+			<p class="text-1xl pb-10">Consider the existing elements in the room: <br> When choosing colors
+				for a room, consider the <br> existing elements such as furniture,<br> artwork
+				and flooring, and choose colors that</p>
+		</div>
+	</section>
+
 	<section>
-		<div>
-			<img class="rounded-full" src="/public/porcelanato.jpg" alt="">
+		<div class="bg-white text-center">
+			<h2>Galeria de fotos</h2>
+			<ul>
+				<li>
+					<img src="/galeria01.jpg" alt="">
+				</li>
+				<li>
+					<img src="/galeria02.jpg" alt="">
+				</li>
+				<li>
+					<img src="/galeria03.jpg" alt="">
+				</li>
+				<li>
+					<img src="/galeria04.jpg" alt="">
+				</li>
+			</ul>
 		</div>
 	</section>
 </Layout>
